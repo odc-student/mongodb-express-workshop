@@ -39,13 +39,13 @@ The API endpoints are as follows:
 
 
 
-GET /api/items: Retrieves all the items
+ * GET /api/items: Retrieves all the items
 
-POST /api/items: Creates an item
+ * POST /api/items: Creates an item
 
-PUT /api/items/:id: Updates an item
+ * PUT /api/items/:id: Updates an item
 
-DELETE /api/items/:id: Deletes an item
+ * DELETE /api/items/:id: Deletes an item
 
 
 ## Readme File
