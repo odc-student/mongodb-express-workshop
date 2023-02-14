@@ -19,7 +19,7 @@ React
 ## Setting Up
 
 
-1 - Clone the repository from Github.
+1 - Clone the this repository.
 
 2 - Run npm install in the root folder to install all the required dependencies.
 
