@@ -1,58 +1,56 @@
-### MERN CRUD Application
+### MongoDB Express Node.js Workshop
 
-This project is a MERN (MongoDB, Express, React, and Node) CRUD (create, read, update, and delete) application. It has been designed to work with Github repositories and create a readme file.
+This is a simple workshop that demonstrates how to build a CRUD (Create, Read, Update, Delete) application using MongoDB, Express, and Node.js.
 
+## Getting Started
 
-## Prerequisites
+To get started, you'll need to have Node.js and MongoDB installed on your system. You can download Node.js from the official website, and MongoDB from the official website or by using a cloud service like Atlas.
 
-Before you start, make sure you have the following installed on your computer:
+Once you have Node.js and MongoDB set up, you can `clone` this repository to your local machine and install the dependencies by running:
 
+```
+npm install
+```
 
+Next, create a `.env` file in the root directory of the project and add the following environment variables:
 
-Node.js 
+```
+MONGODB_URI=<your-mongodb-uri>
+PORT=<your-port-number>
+```
 
-MongoDB 
+Make sure to replace `<your-mongodb-uri>` with the URI for your MongoDB database, and `<your-port-number>` with the port number you want the application to run on.
 
-React 
+Finally, start the application by running:
 
+```
+npm start
+```
 
-## Setting Up
-
-
-1 - Clone the this repository.
-
-2 - Run npm install in the root folder to install all the required dependencies.
-
-3 - Create a .env file and add your MongoDB connection string and other environment variables.
-
-4 - Run npm start to start the server.
-
-
-## The App
-
-The application has two main components: a front-end React app and a back-end Node/Express server. The React app is responsible for displaying the user interface and making AJAX requests to the server. The Node/Express server is responsible for serving the API endpoints and connecting to the MongoDB database.
-
+The application should now be running on the specified port number. You can access it in your web browser by navigating to `http://localhost:<your-port-number>`.
 
 ## API Endpoints
 
-The API endpoints are as follows:
+The following API endpoints are available:
 
+GET `/api/v1//workshops` - Get all workshops
+GET `/api/v1//workshop/:id` - Get a workshop by ID
+POST `/api/v1//workshop` - Create a new workshop
+PUT `/api/v1//workshop/:id` - Update a workshop by ID
+DELETE `/api/v1//workshop/:id` - Delete a workshop by ID
 
+## Technology Stack
 
- * GET /api/items: Retrieves all the items
+The application is built using the following technologies:
 
- * POST /api/items: Creates an item
+`MongoDB` - A NoSQL database used for storing workshop data
+`Express` - A web framework for Node.js used for building the server-side application
+`Node.js` - A JavaScript runtime used for running the server-side application
 
- * PUT /api/items/:id: Updates an item
+## License
 
- * DELETE /api/items/:id: Deletes an item
+This project is licensed under the MIT License - see the `LICENSE` file for details.
 
+## Acknowledgments
 
-## Readme File
-
-At the root of the repository is a Readme file which describes the project and provides instructions on how to set up and run the application.
-
-
-## Conclusion
-
-This MERN CRUD application is a great way to get up and running with a modern web development stack. It can be used as a starting point for any project that needs to store and manipulate data in a database.
+This workshop was created to help developers learn how to build a CRUD application using MongoDB, Express, and Node.js. Special thanks to the workshop organizers and instructors for their guidance and support.
