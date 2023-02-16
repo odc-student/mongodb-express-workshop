@@ -140,6 +140,9 @@ const deleteWorkshop = async (req, res) => {
   }
 };
 
+/**
+ * export all the functions to be used in the routes
+ */
 module.exports = {
   getAllWorkshops,
   createWorkshop,
