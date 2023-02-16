@@ -33,15 +33,15 @@ The application should now be running on the specified port number. You can acce
 
 The following API endpoints are available:
 
-GET `/api/v1//workshops` - Get all workshops
+GET `/api/v1/workshops` - Get all workshops
 
-GET `/api/v1//workshop/:id` - Get a workshop by ID
+GET `/api/v1/workshop/:id` - Get a workshop by ID
 
-POST `/api/v1//workshop` - Create a new workshop
+POST `/api/v1/workshop` - Create a new workshop
 
-PUT `/api/v1//workshop/:id` - Update a workshop by ID
+PUT `/api/v1/workshop/:id` - Update a workshop by ID
 
-DELETE `/api/v1//workshop/:id` - Delete a workshop by ID
+DELETE `/api/v1/workshop/:id` - Delete a workshop by ID
 
 ## Technology Stack
 
