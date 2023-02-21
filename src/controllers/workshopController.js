@@ -82,39 +82,6 @@ const getWorkshop = async (req, res) => {
   }
 };
 
-/**
- * update a workshop from the database and send it to the client side
- * @param {*} req request object from the client side
- * @param {*} res response object from the server side
- */
-const updateWorkshop = async (req, res) => {
-  try {
-    const workshop = await Workshop.findById(req.params.id);
-    if (!workshop) {
-      return res.status(404).json({ message: "Workshop not found" });
-    }
-    // Update the workshop data
-    workshop.name = req.body.name || workshop.name;
-    workshop.description = req.body.description || workshop.description;
-    workshop.date = req.body.date || workshop.date;
-
-    // Save the updated workshop to the database
-    const updatedWorkshop = await workshop.save();
-
-    res.status(200).json({
-      status: "success",
-      data: {
-        updatedWorkshop,
-      },
-    });
-  } catch (err) {
-    res.status(500).json({
-      status: "fail",
-      message:
-        err.message || "Some error occurred while updating the workshop.",
-    });
-  }
-};
 
 /**
  * delete a workshop from the database and send it to the client side
@@ -147,6 +114,5 @@ module.exports = {
   getAllWorkshops,
   createWorkshop,
   getWorkshop,
-  updateWorkshop,
   deleteWorkshop,
 };
